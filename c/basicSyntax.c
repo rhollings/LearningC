@@ -8,11 +8,14 @@ int main() {
   int myNum = 5;               // Integer (whole number)
   float myFloatNum = 5.99;     // Floating point number
   char myLetter = 'D';         // Character
+  char greetings[] = "Hello World!"; // Strings
   
   // Print variables
   printf("%d\n", myNum);
   printf("%f\n", myFloatNum);
   printf("%c\n", myLetter);
+  printf("%s", greetings);
+  printf("%c", greetings[0]);
   return 0;
 }
 
@@ -68,3 +71,66 @@ for (i = 0; i <= 10; i = i + 2) {
   printf("%d\n", i);
 }
 
+
+/* Break Continue */
+// jumps out of the loop when i is equal to 4 
+int i;
+
+for (i = 0; i < 10; i++) {
+  if (i == 4) {
+    break;
+  }
+  printf("%d\n", i);
+}
+
+//example skips the value of 4 
+int i;
+
+for (i = 0; i < 10; i++) {
+  if (i == 4) {
+    continue;
+  }
+  printf("%d\n", i);
+}
+
+// stops at 4
+int i = 0;
+
+while (i < 10) {
+  if (i == 4) {
+    break;
+  }
+  printf("%d\n", i);
+  i++;
+}
+
+// skips 4
+int i = 0;
+
+while (i < 10) {
+  if (i == 4) {
+    i++;
+    continue;
+  }
+  printf("%d\n", i);
+  i++;
+}
+
+// User Input
+#include <stdio.h>
+
+int main() {
+  // Create a string
+  char firstName[30];
+
+  // Ask the user to input some text
+  printf("Enter your first name: \n");
+
+  // Get and save the text
+  scanf("%s", firstName);
+
+  // Output the text
+  printf("Hello %s.", firstName);
+  
+  return 0;
+}
