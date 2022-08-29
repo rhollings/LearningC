@@ -1,2 +1,3 @@
 # LearningC
-Repo of practice scripts in C, C++ and C#
+
+<a href="https://www.w3schools.com/c/c_compiler.php">C Compiler</a> | For practicing small scripts in C language
