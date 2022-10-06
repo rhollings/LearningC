@@ -158,3 +158,60 @@ The public getSalary() method returns the value of the private salary attribute.
 
 Inside main(), we create an object of the Employee class. Now we can use the setSalary() method to set the value of the private attribute to 50000. Then we call the getSalary() method on the object to return the value.
 */
+
+/*
+Inheritance
+In C++, it is possible to inherit attributes and methods from one class to another. We group the "inheritance concept" into two categories:
+
+derived class (child) - the class that inherits from another class
+base class (parent) - the class being inherited from
+To inherit from a class, use the : symbol.
+
+In the example below, the Car class (child) inherits the attributes and methods from the Vehicle class (parent):
+*/
+
+// Base class
+class Vehicle {
+  public:
+    string brand = "Ford";
+    void honk() {
+      cout << "Tuut, tuut! \n" ;
+    }
+};
+
+// Derived class
+class Car: public Vehicle {
+  public:
+    string model = "Mustang";
+};
+
+int main() {
+  Car myCar;
+  myCar.honk();
+  cout << myCar.brand + " " + myCar.model;
+  return 0;
+}
+
+// MultiLevel
+
+// Base class (parent)
+class MyClass {
+  public:
+    void myFunction() {
+      cout << "Some content in parent class." ;
+    }
+};
+
+// Derived class (child)
+class MyChild: public MyClass {
+};
+
+// Derived class (grandchild)
+class MyGrandChild: public MyChild {
+};
+
+int main() {
+  MyGrandChild myObj;
+  myObj.myFunction();
+  return 0;
+}
