@@ -35,3 +35,12 @@ Note: Every C# statement ends with a semicolon ;.
 
 Note: C# is case-sensitive: "MyClass" and "myclass" has different meaning.
 */
+
+
+int myNum = 5;
+double myDoubleNum = 5.99D;
+char myLetter = 'D';
+bool myBool = true;
+string myText = "Hello";
+
+
