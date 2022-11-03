@@ -13,3 +13,13 @@ To insert values to it, we can use an array literal - place the values in a comm
 */
 
 string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+
+/*
+You access an array element by referring to the index number.
+
+This statement accesses the value of the first element in cars:
+*/
+
+string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+Console.WriteLine(cars[0]);
+// Outputs Volvo
