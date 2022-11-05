@@ -23,3 +23,20 @@ This statement accesses the value of the first element in cars:
 string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
 Console.WriteLine(cars[0]);
 // Outputs Volvo
+
+/*
+Other Ways to Create an Array
+If you are familiar with C#, you might have seen arrays created with the new keyword, and perhaps you have seen arrays with a specified size as well. In C#, there are different ways to create an array:
+*/
+
+// Create an array of four elements, and add values later
+string[] cars = new string[4];
+
+// Create an array of four elements and add values right away 
+string[] cars = new string[4] {"Volvo", "BMW", "Ford", "Mazda"};
+
+// Create an array of four elements without specifying the size 
+string[] cars = new string[] {"Volvo", "BMW", "Ford", "Mazda"};
+
+// Create an array of four elements, omitting the new keyword, and without specifying the size
+string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
