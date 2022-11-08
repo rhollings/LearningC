@@ -53,3 +53,11 @@ for (int i = 0; i < cars.Length; i++)
 {
   Console.WriteLine(cars[i]);
 }
+
+
+// Using a `foreach` loop
+string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+foreach (string i in cars) 
+{
+  Console.WriteLine(i);
+}
