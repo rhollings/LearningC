@@ -88,6 +88,7 @@ foreach (int i in myNumbers)
 System.Linq Namespace
 Other useful array methods, such as Min, Max, and Sum, can be found in the System.Linq namespace:
 */
+
 using System;
 using System.Linq;
 
